@@ -93,14 +93,57 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-// Testimonios: desliza al hacer scroll horizontalmente
 document.addEventListener("DOMContentLoaded", () => {
     const slider = document.querySelector(".testimonials-slider");
+    const prevBtn = document.querySelector("#prev-btn");
+    const nextBtn = document.querySelector("#next-btn");
+    let scrollInterval;
 
-    slider.addEventListener("wheel", (event) => {
-        event.preventDefault();
+    // Función para deslizar automáticamente
+    const startAutoScroll = () => {
+        scrollInterval = setInterval(() => {
+            slider.scrollBy({
+                left: 300, // Desplaza el ancho de una tarjeta
+                behavior: "smooth",
+            });
+            // Si está en el final, vuelve al inicio
+            if (
+                slider.scrollLeft + slider.offsetWidth >=
+                slider.scrollWidth
+            ) {
+                slider.scrollTo({
+                    left: 0,
+                    behavior: "smooth",
+                });
+            }
+        }, 4000); // Cada 4 segundos
+    };
+
+    // Detener el desplazamiento automático
+    const stopAutoScroll = () => {
+        clearInterval(scrollInterval);
+    };
+
+    // Navegación manual con botones
+    prevBtn.addEventListener("click", () => {
         slider.scrollBy({
-            left: event.deltaY,
+            left: -300, // Desplaza el ancho de una tarjeta
+            behavior: "smooth",
         });
     });
+
+    nextBtn.addEventListener("click", () => {
+        slider.scrollBy({
+            left: 300, // Desplaza el ancho de una tarjeta
+            behavior: "smooth",
+        });
+    });
+
+    // Iniciar el auto-scroll
+    slider.addEventListener("mouseenter", stopAutoScroll);
+    slider.addEventListener("mouseleave", startAutoScroll);
+
+    // Iniciar desplazamiento automático
+    startAutoScroll();
 });
+

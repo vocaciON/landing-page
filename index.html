@@ -138,45 +138,58 @@
 
     <!--SECCION TESTIMONIO-->
     <section id="testimonio" class="py-5 bg-light">
-        <div class="container">
+        <div class="container position-relative">
             <div class="text-center mb-5">
                 <h2 class="fw-bold" style="color: #333;">Testimonios</h2>
                 <p class="text-muted fs-5">Esto es lo que nuestros usuarios dicen de nosotros.</p>
             </div>
-            <div class="testimonials-slider">
-                <div class="testimonial-item text-center">
+            <!-- Contenedor del slider -->
+            <div class="testimonials-slider d-flex overflow-hidden position-relative">
+                <!-- Testimonio 1 -->
+                <div class="testimonial-item text-center flex-shrink-0">
                     <img src="assents/imagenes/user1.jpg" alt="Usuario 1" class="rounded-circle shadow" width="80">
                     <p class="text-muted mt-3">"Gracias a VocaciON encontré la carrera perfecta para mí. ¡Es increíble!"</p>
                     <h5 class="fw-bold">María López</h5>
                 </div>
-                <div class="testimonial-item text-center">
+                <!-- Testimonio 2 -->
+                <div class="testimonial-item text-center flex-shrink-0">
                     <img src="assents/imagenes/user2.jpg" alt="Usuario 2" class="rounded-circle shadow" width="80">
                     <p class="text-muted mt-3">"La plataforma me ayudó a descubrir mi verdadera pasión. Muy recomendada."</p>
                     <h5 class="fw-bold">Carlos Pérez</h5>
                 </div>
-                <div class="testimonial-item text-center">
+                <!-- Testimonio 3 -->
+                <div class="testimonial-item text-center flex-shrink-0">
                     <img src="assents/imagenes/user3.jpg" alt="Usuario 3" class="rounded-circle shadow" width="80">
                     <p class="text-muted mt-3">"VocaciON es la mejor herramienta para orientarte hacia tu futuro profesional."</p>
                     <h5 class="fw-bold">Ana Gómez</h5>
                 </div>
-                <div class="testimonial-item text-center">
+                <div class="testimonial-item text-center flex-shrink-0">
                     <img src="assents/imagenes/user2.jpg" alt="Usuario 2" class="rounded-circle shadow" width="80">
                     <p class="text-muted mt-3">"La plataforma me ayudó a descubrir mi verdadera pasión. Muy recomendada."</p>
                     <h5 class="fw-bold">Carlos Pérez</h5>
                 </div>
-                <div class="testimonial-item text-center">
+                <div class="testimonial-item text-center flex-shrink-0">
                     <img src="assents/imagenes/user2.jpg" alt="Usuario 2" class="rounded-circle shadow" width="80">
                     <p class="text-muted mt-3">"La plataforma me ayudó a descubrir mi verdadera pasión. Muy recomendada."</p>
                     <h5 class="fw-bold">Carlos Pérez</h5>
                 </div>
-                <div class="testimonial-item text-center">
+                <div class="testimonial-item text-center flex-shrink-0">
                     <img src="assents/imagenes/user2.jpg" alt="Usuario 2" class="rounded-circle shadow" width="80">
                     <p class="text-muted mt-3">"La plataforma me ayudó a descubrir mi verdadera pasión. Muy recomendada."</p>
                     <h5 class="fw-bold">Carlos Pérez</h5>
                 </div>
             </div>
+            <!-- Botones de navegación -->
+            <button id="prev-btn" class="custom-nav-btn position-absolute top-50 start-0 translate-middle-y">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button id="next-btn" class="custom-nav-btn position-absolute top-50 end-0 translate-middle-y">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            
         </div>
     </section>
+    
     
     
       

@@ -123,18 +123,17 @@
 }
 
 
-/* Testimonios */
+/* Sección de testimonios */
 #testimonio {
     padding: 80px 0;
     background-color: #f8f9fa;
+    position: relative;
 }
 
 .testimonials-slider {
     display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
     gap: 20px;
-    padding: 0 20px;
+    scroll-behavior: smooth;
 }
 
 .testimonial-item {
@@ -142,7 +141,7 @@
     background: white;
     padding: 20px;
     border-radius: 8px;
-    scroll-snap-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
@@ -153,3 +152,42 @@
 .testimonial-item img {
     margin-bottom: 15px;
 }
+
+/* Botones de navegación personalizados */
+.custom-nav-btn {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo translúcido */
+    border: 2px solid #007bff; /* Borde azul sutil */
+    border-radius: 50%; /* Botón redondo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #007bff; /* Color del ícono */
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    cursor: pointer;
+}
+
+.custom-nav-btn:hover {
+    background-color: #007bff; /* Fondo azul sólido */
+    color: #fff; /* Ícono blanco */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+    transform: scale(1.1); /* Ligera ampliación */
+}
+
+.custom-nav-btn:active {
+    transform: scale(1); /* Restaurar tamaño al hacer clic */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajuste de posición para responsividad */
+@media (max-width: 768px) {
+    .custom-nav-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+}
+
