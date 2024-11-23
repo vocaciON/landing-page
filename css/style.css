@@ -1,0 +1,27 @@
+/* Cambiar fondo de la barra al hacer scroll */
+.custom-navbar.scrolled {
+    background-color: #ffffff; /* Fondo sólido */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Botón flotante para volver arriba */
+#scrollTopButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#scrollTopButton:hover {
+    transform: scale(1.1);
+    background-color: #0056b3;
+}
+
