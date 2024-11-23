@@ -27,7 +27,80 @@
     background-color: #0056b3;
 }
 
-/* ESTILOS PARA LA SECCION DE NOSOTROS
+/* ESTILOS PARA LA SECCION 
+
+/* Sección de bienvenida */
+#bienvenida {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    background-color: #f8f9fa;
+}
+
+#bienvenida .main-image {
+    max-width: 90%;
+    animation: float 5s infinite ease-in-out;
+}
+
+/* Botones */
+#bienvenida .btn {
+    padding: 15px 30px;
+    border-radius: 50px; /* Botones redondeados */
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Botón principal */
+#bienvenida .btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+#bienvenida .btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Botón secundario */
+#bienvenida .btn-outline-dark {
+    border: 2px solid #333;
+    color: #333;
+}
+
+#bienvenida .btn-outline-dark:hover {
+    background-color: #333;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Animación flotante para la imagen */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    #bienvenida {
+        text-align: center;
+    }
+
+    #bienvenida .main-image {
+        margin-top: 20px;
+    }
+}
+
+
+
+
 /* Estilo de la sección "Nosotros" */
 
 #nosotros {
