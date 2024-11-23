@@ -91,3 +91,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
     window.addEventListener("scroll", handleScrollAnimation);
 });
+
+
+// Testimonios: desliza al hacer scroll horizontalmente
+document.addEventListener("DOMContentLoaded", () => {
+    const slider = document.querySelector(".testimonials-slider");
+
+    slider.addEventListener("wheel", (event) => {
+        event.preventDefault();
+        slider.scrollBy({
+            left: event.deltaY,
+        });
+    });
+});
