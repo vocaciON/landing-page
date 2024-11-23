@@ -175,3 +175,15 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("scroll", handleScrollAnimation);
 });
 
+
+// Validación básica del formulario
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("contact-form");
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        alert("Gracias por contactarnos. Te responderemos pronto.");
+        form.reset();
+    });
+});
+
+
