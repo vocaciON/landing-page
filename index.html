@@ -3,32 +3,287 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VocaciON - Tu primer paso hacia tu futuro esta aqui</title>
+    <title>VocaciON - Tu primer paso hacia tu futuro está aquí</title>
 
-    <meta
-    name="description"
-    content="Vocacion es la plataforma ideal para dar el primer paso en tu futuro profesional"/>
-    
-    <meta
-    name="keywords"
-    content="pruebas, pruebas vocacional, profesionales, carreras, que estudiar, test vocacional"/>
+    <!-- Meta SEO -->
+    <meta name="description" content="Vocacion es la plataforma ideal para dar el primer paso en tu futuro profesional">
+    <meta name="keywords" content="pruebas, pruebas vocacional, profesionales, carreras, que estudiar, test vocacional">
+    <meta name="robots" content="index, follow">
 
-    <meta name="robots" content="index , follow"/>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUa1zYyMlQki8skzEUVF0sA4/dWTVfBf+gLroA7QONq6cuWfUhXImmuDujNp" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"/>
-
+    <!-- Estilo personalizado -->
     <link rel="stylesheet" href="css/style.css">
-
-
-
-
 </head>
 <body>
 
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top custom-navbar shadow-sm">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="assents/imagenes/logo.png" alt="Logo" width="40" height="40" class="me-2">
+                <span class="fw-bold fs-4">VocaciON</span>
+            </a>
+            <!-- Botón para vista móvil -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Enlaces -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#nosotros">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#informacion">Información</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonio">Testimonio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#equipo">Equipo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+                <!-- Botones -->
+                <div class="d-flex align-items-center">
+                    <a class="btn btn-outline-primary me-3 px-4" href="#login">Iniciar Sesión</a>
+                    <a class="btn btn-primary px-4" href="#register">Registrarse</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-     <script src="js/main.js"></script>
+
+
+    <!-- Contenido de las secciones -->
+
+    <!-- SECCION NOSOTROS -->
+    <section id="nosotros" style="padding: 80px 0; background-color: #f8f9fa;">
+        <div class="container">
+            <!-- Título y subtítulo -->
+            <div class="text-center mb-5">
+                <h2 class="fw-bold" style="color: #333;">Sobre Nosotros</h2>
+                <p class="text-muted fs-5">Descubre quiénes somos, nuestra misión y los valores que nos guían.</p>
+            </div>
+    
+            <!-- Contenido dividido en columnas -->
+            <div class="row align-items-center">
+                <!-- Imagen ilustrativa -->
+                <div class="col-lg-6 mb-4 mb-lg-0 animate-on-scroll">
+                    <div class="image-wrapper">
+                        <img src="assents/imagenes/nosotros.jpg" alt="Nosotros" class="img-fluid rounded shadow">
+                    </div>
+                </div>
+                <!-- Información textual -->
+                <div class="col-lg-6 animate-on-scroll">
+                    <h3 class="fw-bold hover-highlight" style="color: #007bff;">Nuestra Misión</h3>
+                    <p class="text-muted">En VocaciON, nuestra misión es ayudar a las personas a descubrir su vocación y tomar decisiones informadas sobre su futuro profesional. Trabajamos para ofrecer herramientas innovadoras y confiables.</p>
+                    <h3 class="fw-bold hover-highlight mt-4" style="color: #007bff;">Nuestra Visión</h3>
+                    <p class="text-muted">Convertirnos en la plataforma de referencia para la orientación vocacional, proporcionando soluciones efectivas y accesibles para todas las edades y niveles educativos.</p>
+                    <h3 class="fw-bold hover-highlight mt-4" style="color: #007bff;">Nuestros Valores</h3>
+                    <ul class="text-muted">
+                        <li>Compromiso con la educación y el desarrollo personal.</li>
+                        <li>Innovación y mejora continua.</li>
+                        <li>Accesibilidad para todos.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SECCON DE INFORMACION-->
+    <section id="informacion" class="py-5" style="background-color: #e9ecef;">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold" style="color: #333;">Información</h2>
+                <p class="text-muted fs-5">Descubre cómo nuestra plataforma puede ayudarte en tu camino profesional.</p>
+            </div>
+            <div class="row g-4">
+                <!-- Tarjeta 1 -->
+                <div class="col-lg-4 col-md-6 animate-on-scroll">
+                    <div class="info-card text-center shadow-sm">
+                        <i class="fas fa-search fa-3x text-primary mb-3"></i>
+                        <h4 class="fw-bold">Orientación</h4>
+                        <p class="text-muted">Accede a herramientas diseñadas para identificar tus fortalezas y áreas de interés.</p>
+                    </div>
+                </div>
+                <!-- Tarjeta 2 -->
+                <div class="col-lg-4 col-md-6 animate-on-scroll">
+                    <div class="info-card text-center shadow-sm">
+                        <i class="fas fa-lightbulb fa-3x text-primary mb-3"></i>
+                        <h4 class="fw-bold">Decisiones Informadas</h4>
+                        <p class="text-muted">Obtén datos confiables y consejos prácticos para elegir tu camino.</p>
+                    </div>
+                </div>
+                <!-- Tarjeta 3 -->
+                <div class="col-lg-4 col-md-6 animate-on-scroll">
+                    <div class="info-card text-center shadow-sm">
+                        <i class="fas fa-chart-line fa-3x text-primary mb-3"></i>
+                        <h4 class="fw-bold">Progreso</h4>
+                        <p class="text-muted">Mide tu avance con estadísticas y métricas claras para lograr tus objetivos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--SECCION TESTIMONIO-->
+    <section id="testimonio" class="py-5 bg-light">
+        <div class="container position-relative">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold" style="color: #333;">Testimonios</h2>
+                <p class="text-muted fs-5">Esto es lo que nuestros usuarios dicen de nosotros.</p>
+            </div>
+            <!-- Contenedor del slider -->
+            <div class="testimonials-slider d-flex overflow-hidden position-relative">
+                <!-- Testimonio 1 -->
+                <div class="testimonial-item text-center flex-shrink-0">
+                    <img src="assents/imagenes/user1.jpg" alt="Usuario 1" class="rounded-circle shadow" width="80">
+                    <p class="text-muted mt-3">"Gracias a VocaciON encontré la carrera perfecta para mí. ¡Es increíble!"</p>
+                    <h5 class="fw-bold">María López</h5>
+                </div>
+                <!-- Testimonio 2 -->
+                <div class="testimonial-item text-center flex-shrink-0">
+                    <img src="assents/imagenes/user2.jpg" alt="Usuario 2" class="rounded-circle shadow" width="80">
+                    <p class="text-muted mt-3">"La plataforma me ayudó a descubrir mi verdadera pasión. Muy recomendada."</p>
+                    <h5 class="fw-bold">Carlos Pérez</h5>
+                </div>
+                <!-- Testimonio 3 -->
+                <div class="testimonial-item text-center flex-shrink-0">
+                    <img src="assents/imagenes/user3.jpg" alt="Usuario 3" class="rounded-circle shadow" width="80">
+                    <p class="text-muted mt-3">"VocaciON es la mejor herramienta para orientarte hacia tu futuro profesional."</p>
+                    <h5 class="fw-bold">Ana Gómez</h5>
+                </div>
+                <div class="testimonial-item text-center flex-shrink-0">
+                    <img src="assents/imagenes/user2.jpg" alt="Usuario 2" class="rounded-circle shadow" width="80">
+                    <p class="text-muted mt-3">"La plataforma me ayudó a descubrir mi verdadera pasión. Muy recomendada."</p>
+                    <h5 class="fw-bold">Carlos Pérez</h5>
+                </div>
+                <div class="testimonial-item text-center flex-shrink-0">
+                    <img src="assents/imagenes/user2.jpg" alt="Usuario 2" class="rounded-circle shadow" width="80">
+                    <p class="text-muted mt-3">"La plataforma me ayudó a descubrir mi verdadera pasión. Muy recomendada."</p>
+                    <h5 class="fw-bold">Carlos Pérez</h5>
+                </div>
+                <div class="testimonial-item text-center flex-shrink-0">
+                    <img src="assents/imagenes/user2.jpg" alt="Usuario 2" class="rounded-circle shadow" width="80">
+                    <p class="text-muted mt-3">"La plataforma me ayudó a descubrir mi verdadera pasión. Muy recomendada."</p>
+                    <h5 class="fw-bold">Carlos Pérez</h5>
+                </div>
+            </div>
+            <!-- Botones de navegación -->
+            <button id="prev-btn" class="custom-nav-btn position-absolute top-50 start-0 translate-middle-y">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button id="next-btn" class="custom-nav-btn position-absolute top-50 end-0 translate-middle-y">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            
+        </div>
+    </section>
+
+    <!--SECCION DE EQUIPO-->
+    <section id="equipo" class="py-5 bg-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold" style="color: #333;">Nuestro Equipo</h2>
+                <p class="text-muted fs-5">Conoce a los profesionales que hacen posible VocaciON.</p>
+            </div>
+            <div class="row g-4">
+                <!-- Miembro 1 -->
+                <div class="col-lg-4 col-md-6 animate-on-scroll">
+                    <div class="team-card text-center shadow-sm">
+                        <img src="assents/imagenes/team1.jpg" alt="Miembro 1" class="rounded-circle mb-3 team-photo">
+                        <h5 class="fw-bold">María López</h5>
+                        <p class="text-muted">CEO & Fundadora</p>
+                        <div class="social-links">
+                            <a href="#" class="me-2"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="me-2"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="me-2"><i class="fab fa-instagram"></i></a>
+                        
+                           
+                        </div>
+                    </div>
+                </div>
+                <!-- Miembro 2 -->
+                <div class="col-lg-4 col-md-6 animate-on-scroll">
+                    <div class="team-card text-center shadow-sm">
+                        <img src="assents/imagenes/team2.jpg" alt="Miembro 2" class="rounded-circle mb-3 team-photo">
+                        <h5 class="fw-bold">Carlos Pérez</h5>
+                        <p class="text-muted">CTO</p>
+                        <div class="social-links">
+                            <a href="#" class="me-2"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="me-2"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="me-2"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Miembro 3 -->
+                <div class="col-lg-4 col-md-6 animate-on-scroll">
+                    <div class="team-card text-center shadow-sm">
+                        <img src="assents/imagenes/team3.jpg" alt="Miembro 3" class="rounded-circle mb-3 team-photo">
+                        <h5 class="fw-bold">Ana Gómez</h5>
+                        <p class="text-muted">Directora de Marketing</p>
+                        <div class="social-links">
+                            <a href="#" class="me-2"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="me-2"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="me-2"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+      
+
+    <main style="margin-top: 80px;">
+        
+        <section id="informacion" style="height: 100vh; background-color: #e9ecef;">
+            <div class="container">
+                <h1 class="text-center mt-5">Información</h1>
+                <p class="text-center">Detalles sobre nuestra plataforma.</p>
+            </div>
+        </section>
+        <section id="testimonio" style="height: 100vh; background-color: #dee2e6;">
+            <div class="container">
+                <h1 class="text-center mt-5">Testimonios</h1>
+                <p class="text-center">Opiniones de nuestros usuarios.</p>
+            </div>
+        </section>
+        <section id="equipo" style="height: 100vh; background-color: #ced4da;">
+            <div class="container">
+                <h1 class="text-center mt-5">Equipo</h1>
+                <p class="text-center">Conoce a nuestro equipo de profesionales.</p>
+            </div>
+        </section>
+        <section id="contacto" style="height: 100vh; background-color: #adb5bd;">
+            <div class="container">
+                <h1 class="text-center mt-5">Contacto</h1>
+                <p class="text-center">Cómo comunicarse con nosotros.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Botón "Ir Arriba" -->
+    <a href="#nosotros" id="scrollTopButton" class="btn btn-primary position-fixed" style="display: none; bottom: 20px; right: 20px; border-radius: 50%; width: 50px; height: 50px; align-items: center; justify-content: center;">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Archivo JavaScript personalizado -->
+    <script src="js/main.js"></script>
 </body>
 </html>
